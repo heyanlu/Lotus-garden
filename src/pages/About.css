@@ -1,0 +1,33 @@
+article {
+    padding: 1rem;
+}
+
+.article-image {
+    max-width: 100%;
+}
+
+#image1 {
+    float: left;
+    margin-right: 1rem;
+}
+
+#image2 {
+    float:right;
+    margin-left: 1rem;
+}
+
+.about-text {
+    text-align: justify;
+
+    color: var(--text-color);
+}
+
+@media (min-width: 50rem) {
+    article {
+        padding: 1rem 10rem;
+    }
+
+    .article-image {
+        max-width: 40%;
+    }
+}

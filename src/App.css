@@ -1,0 +1,60 @@
+body {
+    --background-color: white;
+    --text-color: black;
+
+    --panel-color: rgb(236, 236, 236);
+    --panel-text-color: black;
+    --panel-color-hover: rgb(82, 82, 82);
+    --panel-text-color-hover: rgb(255, 255, 255);
+
+    --button-background-color: red;
+    --button-text-color: black;
+}
+
+body.dark {
+    --background-color: rgb(34, 34, 34);
+    --text-color: #fff;
+
+    --panel-color: rgb(70, 70, 70);
+    --panel-text-color: rgb(205, 205, 205); 
+    --panel-color-hover: rgb(65 92 65);
+    --panel-text-color-hover: rgb(140 255 184);
+
+    --button-background-color: #ff707f;
+    --button-text-color: white;
+}
+
+body{
+    box-sizing: border-box;
+    
+    padding: 0;
+    margin: 0;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    line-height: 1.6rem;
+}
+
+main {
+    background-color: var(--background-color);
+}
+
+.main-wrapper {
+    padding: 1rem;
+}
+
+@font-face {
+    font-family: "Chinese-alphabet";
+    src: local("Chinese-alphabet"), url("./fonts/Freehand-Regular.ttf") format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@media (min-width: 50rem) {
+    .main-wrapper {
+        padding: 3rem 6rem;
+    }
+}
+
+
+

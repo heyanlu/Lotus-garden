@@ -1,0 +1,64 @@
+.accordion {
+    margin: 0;    
+}
+
+.accordion-panel {
+    border: 0.5px solid rgb(226, 226, 226);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.accordion-button  {
+    grid-column: span 12;
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 1rem;
+    font-weight: bold;
+
+    padding: 1rem;
+    border: inherit;
+
+    background-color: inherit;
+
+    cursor: pointer;
+}
+
+.accordion-button.open {
+    position: relative;
+    background-color: var(--background-color);
+    outline: 3px solid rgb(0, 191, 255);
+    z-index: 1;
+}
+
+.accordion-button.open .accordion-title, 
+.accordion-button.open .accordion-toggle {
+    color: var(--text-color);
+}
+
+.accordion-toggle {
+    color: var(--panel-text-color);
+}
+
+.accordion-text {
+    grid-column: span 12;
+
+    max-height: 0;
+
+    overflow: hidden;
+}
+
+.accordion-text.open {
+    max-height: 30rem;
+}
+
+.accordion-text p {
+    margin: 1rem;
+}
+
+@media(prefers-reduced-motion: no-preference) {
+    .accordion-text {
+        transition-property: max-height; 
+        transition: 0.5s ease-in-out;
+    }
+}

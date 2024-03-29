@@ -1,0 +1,40 @@
+.tab-content-wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+    background-color: var(--panel-background-color);
+}
+
+.tab-image-container {
+    grid-column: span 12;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.tab-content-container {
+    grid-column: span 12;
+
+    padding: 0 1rem;
+}
+
+.tab-content {
+    margin: 0;
+}
+
+@media (min-width: 44rem) {
+    .tab-image-container {
+        grid-column: span 2;
+    }
+
+    .tab-content-container {
+        grid-column: span 10;
+    
+        padding: 0 1rem;
+    }
+}

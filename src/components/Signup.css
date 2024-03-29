@@ -1,0 +1,103 @@
+.sign-up-button {
+    border: none;
+    border-radius: 5px;
+
+    background-color: var(--background-color);
+    color: var(--text-color);
+    
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+.sign-up-button:hover {
+    cursor: pointer;
+    background-color: var(--panel-color-hover);
+    color: var(--panel-text-color-hover);
+}
+
+.sign-up-button:active {
+    animation: buttonClick 0.1s;
+}
+
+@keyframes buttonClick {
+    0% {
+        transform: translateY(0);
+    }
+    30% {
+        transform: translateY(3px);
+    }
+    50% {
+        transform: translateY(5px);
+    }
+    70% {
+        transform: translateY(3px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/*Style Modal Form*/
+.dialog {
+    /* width: 360px; */
+
+    background-color: var(--panel-color);
+    color: var(--text-color);
+}
+
+.form {
+    padding: 0.5rem;
+}
+
+.register-title {
+    margin-top: 0;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.field-container {
+    display: flex;
+    flex-direction: column;
+    
+    margin-bottom: 1rem;
+}
+
+.dialog label {
+    font-size: 1rem;
+}
+
+.dialog input {
+    margin: 0;
+}
+
+.error {
+    font-size: 1rem;
+    color: red;
+    
+    margin: 0;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.button {
+    font-size: 1rem;
+
+    border-radius: 5px;
+
+    margin-top: 1rem;
+}
+
+.button:hover {
+    cursor: pointer;
+    filter: brightness(80%);
+}
+
+.dialog::backdrop {
+    background-color: black;
+    opacity: 0.6;
+}

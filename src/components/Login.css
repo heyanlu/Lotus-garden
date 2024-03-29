@@ -1,0 +1,15 @@
+.dialog {
+    background-color: var(--panel-color);
+    color: var(--text-color);
+}
+
+.dialog input {
+    margin-left: 1rem;
+}
+
+.error {
+    font-size: 1rem;
+    color: red;
+    
+    margin: 0;
+}

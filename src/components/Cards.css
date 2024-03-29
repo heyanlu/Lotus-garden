@@ -1,0 +1,81 @@
+header {
+    position: sticky;
+    top: 0;
+}
+
+.hero-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image {
+    grid-column: span 12;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.hero-text {
+    position: absolute;
+    top: 5%;
+
+    color: #F72F85;
+
+    font-size: 1.2rem;
+    font-family: "Chinese-alphabet";
+}
+
+.hero-CAT-container {
+    padding: 3rem;
+    padding-bottom: 0;
+
+    display: flex;
+    justify-content: center;
+}
+
+.hero-CAT-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--text-color);
+    
+    margin: 0;
+}
+
+.section-title {
+    color: var(--panel-text-color);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 1rem;
+}
+
+.card {
+    grid-column: span 12;
+
+    padding: 1rem;
+
+    background-color: var(--panel-color);
+}
+
+.card-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.card-text {
+    color: var(--text-color);
+}
+
+@media (min-width: 60rem) {
+    .card {
+        grid-column: span 6;
+    }
+
+    .hero-text {
+        font-size: 3rem;
+    }
+
+
+}

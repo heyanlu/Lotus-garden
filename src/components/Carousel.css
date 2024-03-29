@@ -1,0 +1,50 @@
+.carousel {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.carousel-image-container {
+    grid-column: span 12;
+}
+
+.carousel-image {
+    max-width: 100%;
+}
+
+.carousel-text-container {
+    grid-column: span 12;
+    padding: 0 2rem;
+}
+
+.carousel-text {
+    color: var(--text-color);
+}
+
+.carousel-button-container {
+    grid-column: span 12;
+    display: flex;
+    justify-content: center;
+
+}
+
+.carousel-button {
+    border: none;
+
+    background-color: inherit;
+    color: var(--button-text-color); 
+}
+
+.carousel-button:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+@media (min-width: 44rem) {
+    /* .carousel-image-container {
+        grid-column: span 7;
+    }
+    
+    .carousel-text-container {
+        grid-column: span 5;
+    } */
+}

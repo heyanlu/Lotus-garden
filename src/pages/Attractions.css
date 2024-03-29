@@ -1,0 +1,31 @@
+.attractions-button-container {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 1rem;
+    
+    gap: 1rem;
+}
+
+.tab-button {
+    border: none;
+    
+    background-color: var(--background-color);
+
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+.tab-button:hover {
+    text-decoration: underline;
+
+    cursor: pointer;
+} 
+
+.tab-break {
+    color: var(--text-color);
+}
+
+.attractions-text {
+    color: var(--text-color);
+}

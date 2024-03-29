@@ -1,0 +1,21 @@
+.checkbox-container {
+    display: flex;
+    flex-direction: column;
+
+    padding-left: 1rem;
+}
+
+.checkbox-label {
+    color: var(--text-color);
+}
+
+.plan-title {
+    padding: 1rem;
+    margin: 0;
+
+    font-size: 1.2rem;
+}
+
+.plan-title, .accordion-title, .accordion-text {
+    color: var(--text-color);
+}
